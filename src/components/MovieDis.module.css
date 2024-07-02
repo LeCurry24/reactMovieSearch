@@ -1,0 +1,21 @@
+.body {
+    display: flex;
+    flex-direction: row;
+    
+
+}
+
+.container {
+    margin: 8px;
+    max-width: 200px;
+    width: 50%;
+    display: flex;
+    
+}
+
+.movieInfo {
+    margin: 8px;
+    max-width: 300px;
+    width: 100%;
+}
+

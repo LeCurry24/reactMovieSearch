@@ -21,7 +21,7 @@ const MovieForm = () => {
     useEffect(() => {
         if (movie.length > 1) {
 
-            
+            // fetchMovie(movie)
         }
     }, [movie]);
 
@@ -40,7 +40,7 @@ const MovieForm = () => {
     
     return (
         <>
-            <form>
+            <form onSubmit={handlesubmit}>
                 <label>
                     Search Movie:
                     <input 
@@ -50,7 +50,7 @@ const MovieForm = () => {
                     onChange={handlechange}
                     />
                 </label>
-                <button type="submit" onChange={handlesubmit}>search...</button>
+                <button type="submit" >search...</button>
             </form>
             <section>
                 {!!movies && (
